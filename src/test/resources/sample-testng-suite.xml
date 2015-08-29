@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Sample Test" parallel="methods" thread-count="4">
+
+	<parameter name="gridUrl" value="http://localhost:4444/wd/hub" />
+
+	<test name="Sample Test - Chrome">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="io.testim.SampleTest" />
+		</classes>
+	</test>
+
+	<test name="Sample Test - Firefox">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="io.testim.SampleTest" />
+		</classes>
+	</test>
+</suite> 
